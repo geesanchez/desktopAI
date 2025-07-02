@@ -217,7 +217,7 @@ const ChatInterface: React.FC = () => {
           <div className="demo-banner">
             <span>🌐 Web Demo</span>
             <a 
-              href="https://github.com/yourusername/deskmate-ai/releases" 
+              href="https://github.com/geesanchez/desktopAI/releases" 
               target="_blank" 
               rel="noopener noreferrer"
               className="download-link"

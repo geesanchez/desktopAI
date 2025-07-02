@@ -2,7 +2,13 @@
 
 ![DeskMate AI](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![Electron](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 
+[![🌐 Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Try_Now-blue?style=for-the-badge)](https://deskmate-ai-demo-at17ev176-sanchez27gs-2764s-projects.vercel.app)
+[![📥 Download](https://img.shields.io/badge/📥_Download-Desktop_App-green?style=for-the-badge)](https://github.com/geesanchez/desktopAI/releases)
+[![⭐ Star](https://img.shields.io/badge/⭐_Star-Repository-yellow?style=for-the-badge)](https://github.com/geesanchez/desktopAI)
+
 An intelligent desktop assistant built with **Electron**, **React**, and **TypeScript**, featuring AI-powered chat, voice commands, and system tray integration. This project demonstrates modern desktop application development with cutting-edge AI integration.
+
+> **🎯 Portfolio Project:** Perfect demonstration of full-stack desktop development skills for modern tech companies.
 
 ## 🌟 Features
 
