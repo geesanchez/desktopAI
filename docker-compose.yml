@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  deskmate-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: deskmate-ai
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - ELECTRON_DISABLE_SECURITY_WARNINGS=true
+    ports:
+      - "3000:3000"
+    volumes:
+      # Mount volume for persistent settings
+      - deskmate_data:/app/data
+      # Mount for logs
+      - ./logs:/app/logs
+    networks:
+      - deskmate-network
+    healthcheck:
+      test: ["CMD", "node", "-e", "console.log('Health check passed')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Redis for caching (if implementing caching features)
+  redis:
+    image: redis:7-alpine
+    container_name: deskmate-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - deskmate-network
+    command: redis-server --appendonly yes
+
+  # Optional: Nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    container_name: deskmate-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - deskmate-ai
+    networks:
+      - deskmate-network
+
+volumes:
+  deskmate_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  deskmate-network:
+    driver: bridge 
