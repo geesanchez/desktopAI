@@ -27,7 +27,7 @@
     "voice-commands",
     "openai"
   ],
-  "author": "Your Name",
+  "author": "Gabriel Sanchez <sanchez27.gs@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@types/node": "^18.19.0",

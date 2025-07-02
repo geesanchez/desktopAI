@@ -189,7 +189,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 About the Developer
 
-Built by [Your Name] as a portfolio project demonstrating modern desktop application development with AI integration. This project showcases skills relevant to companies like Cluely, focusing on:
+Built by **Gabriel Sanchez** ([@geesanchez](https://github.com/geesanchez)) as a portfolio project demonstrating modern desktop application development with AI integration. This project showcases skills relevant to companies like Cluely, focusing on:
 
 - AI-powered desktop assistants
 - Real-time user interfaces
@@ -197,13 +197,15 @@ Built by [Your Name] as a portfolio project demonstrating modern desktop applica
 - Performance optimization
 - Modern development practices
 
+**Contact:** [sanchez27.gs@gmail.com](mailto:sanchez27.gs@gmail.com)
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Support
 
-For questions or support, please open an issue on GitHub or contact [your-email@example.com].
+For questions or support, please open an issue on GitHub or contact [sanchez27.gs@gmail.com](mailto:sanchez27.gs@gmail.com).
 
 ---
 
